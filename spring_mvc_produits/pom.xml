@@ -76,5 +76,17 @@
 		</plugins>
 		<finalName>spring_mvc_produits</finalName>
 	</build>
+		    <distributionManagement>
+        <snapshotRepository>
+            <id>deployment</id>
+	    <name>NEXUS Snapshot</name>
+            <url>http://18.184.222.182:8081/repository/Devops_SNAP/</url>
+        </snapshotRepository>
+	<repository>
+            <id>deployment</id>
+	    <name>NEXUS Release</name>
+            <url>http://18.184.222.182:8081/repository/Devops_REL/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
